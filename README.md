@@ -2,14 +2,14 @@ Make sure you have Rust, Anchor, Yarn and Cargo installed
 
 https://gist.github.com/emersonliuuu/81f1ce90bbaeef8bdb22b6e65f56b3b7
 
-````$ rustup --version
+```$ rustup --version```
 rustup 1.27.1 (54dd3d00f 2024-04-24)
-$ solana --version
+```$ solana --version``
 solana-cli 1.18.17 (src:b685182a; feat:4215500110, client:SolanaLabs)
-$ yarn --version
+```$ yarn --version```
 1.22.19
-$ anchor --version
-anchor-cli 0.30.1```
+```$ anchor --version```
+anchor-cli 0.30.1
 
 
 Installing with Cargo
@@ -26,7 +26,8 @@ If the rust code has been generated then
 
 expenses-tracker.ts (test script)
 
-```import * as anchor from "@coral-xyz/anchor";
+```
+import * as anchor from "@coral-xyz/anchor";
 import { Program } from "@coral-xyz/anchor";
 import { ExpensesTracker } from "../target/types/expenses_tracker";
 import { assert } from "chai";
@@ -102,7 +103,8 @@ describe("expenses_tracker", () => {
     );
     assert.isAbove(receiverBalance, 0);
   });
-});```
+});
+```
 
 
 social-media.ts (test script)
@@ -195,4 +197,3 @@ After pasting the code inside, run
 If all checks have passed, run
 ``` anchor test --provider.cluster devnet ```
 
-````
